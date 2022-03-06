@@ -1357,7 +1357,7 @@ def amer_implied_vol_76(option_type, fs, x, t, r, cp):
 # otherwise, do nothing
 
 def _debug(debug_input):
-    if (__name__ is "__main__") and (_DEBUG is True):
+    if (__name__ == "__main__") and (_DEBUG == True):
         print(debug_input)
 
 
@@ -1398,7 +1398,7 @@ def assert_close(value_a, value_b, precision=.000001):
     else:
         my_result = False
 
-    if (__name__ is "__main__") and (my_result is False):
+    if (__name__ == "__main__") and (my_result == False):
         print("  FAILED TEST. Comparing {0} and {1}. Difference is {2}, Difference Type is {3}".format(value_a, value_b,
                                                                                                        my_diff,
                                                                                                        my_diff_type))
